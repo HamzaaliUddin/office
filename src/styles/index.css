@@ -1,0 +1,388 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url('../../public/fonts/Inter-Regular.ttf');
+}
+
+body {
+  color: black;
+  @apply bg-app-gray;
+  overflow-x: hidden !important;
+}
+
+.sticky-menu .navbar-logo {
+  @apply py-2;
+}
+
+.sticky-menu #navbarToggler span {
+  @apply bg-dark dark:bg-white;
+}
+
+.sticky-menu #navbarCollapse li>a {
+  @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
+}
+
+#navbarCollapse li .ud-menu-scroll.active {
+  @apply opacity-70;
+}
+
+.sticky-menu #navbarCollapse li .ud-menu-scroll.active {
+  @apply text-primary opacity-100 dark:text-white;
+}
+
+.sticky-menu .loginBtn {
+  @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
+}
+
+.sticky-menu .signUpBtn {
+  @apply bg-primary text-white hover:bg-dark hover:text-white;
+}
+
+.navbarTogglerActive>span:nth-child(1) {
+  @apply top-[7px] rotate-45 transform;
+}
+
+.navbarTogglerActive>span:nth-child(2) {
+  @apply opacity-0;
+}
+
+.navbarTogglerActive>span:nth-child(3) {
+  @apply top-[-8px] rotate-[135deg];
+}
+
+.testimonials-bg {
+  position: relative;
+}
+
+.testimonials-bg:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  background: url("/images/testimonials/Vector.png");
+  background-repeat: no-repeat;
+  background-position: 50;
+  background-size: cover;
+}
+
+.mySlide .swiper {
+  width: 80%;
+}
+
+.mySlide .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 25.57px !important;
+  color: black;
+  font-weight: 700;
+}
+
+.mySlide .swiper-button-prev:after,
+.swiper-button-prev:after {
+  font-size: 25.57px !important;
+  color: black;
+  font-weight: 700;
+}
+
+.ant-tabs-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.ant-tabs-top>.ant-tabs-nav::before {
+  border-width: 1px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.service-tabs-nav .ant-tabs-top>.ant-tabs-nav::before {
+  width: 600px;
+}
+
+/* .interfonts {
+  font-family: "Inter", sans-serif;
+} */
+
+.scrollStyle {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollStyle::-webkit-scrollbar {
+  display: none;
+}
+
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ant-collapse-item {
+  background-color: #f0eeff !important;
+  border-radius: 20px !important;
+  padding-block: 30px;
+}
+
+.css-16hmm1m-MuiTabs-root {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.css-1lygqn5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #2555bb !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .mySlide .swiper {
+    width: 100%;
+
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .service-tabs-nav .ant-tabs-top>.ant-tabs-nav::before {
+    width: 100%;
+  }
+}
+
+.service-tabs .ant-tabs-nav-wrap {
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow svg {
+  border: 1px solid purple;
+  display: none;
+}
+
+.slick-list {
+  margin: 0 2rem !important;
+  /* Negative margin to counteract the margin added to each slide */
+  width: 1160px;
+  position: absolute;
+  left: -120px;
+  height: 270px !important;
+  overflow: hidden;
+}
+
+.mySlide .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20.57px !important;
+}
+
+.mySlide .swiper-button-prev:after,
+.swiper-button-prev:after {
+  font-size: 20.57px !important;
+
+}
+
+@media screen and (max-width: 1139px) {
+  .testimonials-bg {
+    overflow: hidden;
+  }
+
+  .testimonials-bg:before {
+    left: 0px;
+  }
+
+  .slick-list {
+    margin: 0 !important;
+    /* Negative margin to counteract the margin added to each slide */
+    position: none;
+    left: 0px;
+  }
+
+  .ant-tabs-top>.ant-tabs-nav::before {
+    width: 100%;
+    margin: none;
+  }
+
+
+}
+
+.mySwiper .swiper-slide {
+  background-color: transparent !important;
+}
+
+.portfolio-tabs .ant-tabs-nav {
+  position: sticky !important;
+  top: 4.6rem !important;
+  z-index: 999 !important;
+  background: #f9f9fb !important;
+}
+
+.portfolio-tabs .ant-tabs-nav div div {
+  column-gap: 30px !important;
+}
+
+.portfolio-tabs .ant-tabs-nav div div div {
+  margin: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.portfolio-tabs .ant-tabs-nav div div div div h1 {
+  margin: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.tawk-branding {
+  display: none !important;
+}
+
+.lineCustom::after {
+  display: block;
+
+  content: " ";
+  position: absolute;
+  top: -5px;
+  left: 40%;
+  border-left-width: 5px;
+  height: 180px;
+}
+
+.contactBg {
+  background-image: url('./../../public/images/contact/Contact-Background.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.ant-tabs-nav-list {
+  margin: 0 auto;
+}
+
+.ant-tabs-tab {
+  padding: 0.5rem 1.4rem !important;
+  margin: 0 .8rem !important;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ant-tabs-tab:hover {
+  color: #2555bb !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  border-bottom: 2px solid #2555bb !important;
+  z-index: 10;
+  transition: all 2s ease;
+
+}
+
+.ant-tabs-tab-btn {
+  color: rgba(33, 43, 54, .5);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #2555bb !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.ant-collapse-item {
+  padding: 0.5rem !important;
+}
+
+@media screen and (max-width: 400px) {
+
+  .mySlide .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 13.57px !important;
+  }
+
+  .mySlide .swiper-button-prev:after,
+  .swiper-button-prev:after {
+    font-size: 13.57px !important;
+  }
+
+  .lineCustom::after {
+    display: none;
+  }
+
+  .testimonials-bg:before {
+
+    background-position: 50;
+    background-size: 100% 50%;
+  }
+
+  .slick-list {
+    width: 100%;
+  }
+
+  .ant-collapse-item {
+    margin-bottom: 20px !important;
+    padding-block: 8px !important;
+    padding-inline: 2px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+  }
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

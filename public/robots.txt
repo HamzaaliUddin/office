@@ -1,0 +1,5 @@
+# Allow all crawlers
+User-agent: *
+Disallow:
+
+Sitemap: https://www.cubicus.io/sitemap.xml
